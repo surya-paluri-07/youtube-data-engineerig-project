@@ -14,7 +14,7 @@ spark = glueContext.spark_session
 job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 
-
+#s3 source and target buckets
 source_bucket = "s3://spaluri-de-on-youtube-raw-useast1-dev/youtube/raw_statistics/"
 target_bucket = "s3://spaluri-de-on-youtube-cleansed-useast1-dev/youtube/raw_statistics/"
 
